@@ -9,11 +9,13 @@
 /* Nav Bar Start */
 .nav-bar{
   width: 100%;
-  position: absolute;
+  position: sticky;
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  padding: 10px 20px;
+  top: 0;
   align-items: center;
+  background-color: #2b2b2b3c;
 }
 .logo{
   font-size: 30px;
