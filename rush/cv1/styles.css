@@ -11,7 +11,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #3333333c;
+  background-color: #333333;
   position: sticky;
   top: 0;
 }
@@ -33,7 +33,7 @@ nav {
 }
 
 .nav-links a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   font-size: 20px;
   padding: 10px;
@@ -57,6 +57,22 @@ nav {
 .contact-section {
   padding: 60px 20px;
   text-align: center;
+}
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-section .aboutKhin {
+  display: block;
+  width: 50%;
+}
+.about-section .pic {
+  width: 500px;
+}
+.about-section .pic img {
+  width: 500px;
+  border-radius: 50%;
 }
 
 .about-section p {
@@ -87,8 +103,12 @@ nav {
 .project-card img {
   width: 300px;
 }
+.contact-section {
+  background-color: #33333355;
+}
 .contact-section h2 {
   font-size: 35px;
+  color: #000;
 }
 
 .contact-section li {
@@ -99,18 +119,19 @@ nav {
 .contact-section a {
   text-decoration: none;
   font-size: 20px;
-  color: #333;
+  color: #000;
 }
 
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
+    color: #fff;
   }
 
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: #3333333c;
+    background-color: #333;
     position: absolute;
     top: 78px;
     right: 0;
@@ -124,5 +145,24 @@ nav {
 
   .nav-links.show {
     display: flex;
+  }
+  .about-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-section .aboutKhin {
+    width: 100%;
+  }
+  .about-section .pic {
+    width: 300px;
+  }
+  .about-section .pic img {
+    width: 300px;
+    border-radius: 50%;
+  }
+  .project-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
