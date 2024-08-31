@@ -147,7 +147,7 @@
 }
 .contact-detail a{
   text-decoration: none;
-  color: black;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,7 +158,7 @@
 .contact-detail a i:hover{
   cursor: pointer;
   filter: brightness(1);
-  color: white;
+  color: palevioletred;
 }
 /* Contact Section End */
 
@@ -173,7 +173,7 @@
 .logo{
   position: absolute;
   top: 30px;
-  left: 30px;
+  left: 50px;
   color: palevioletred;
 }
 .nav-link{
