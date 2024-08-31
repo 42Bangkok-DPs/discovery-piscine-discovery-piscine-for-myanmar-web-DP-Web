@@ -15,7 +15,7 @@
   padding: 10px 20px;
   top: 0;
   align-items: center;
-  background-color: #2b2b2b3c;
+  background-color: #333333;
 }
 .logo{
   font-size: 30px;
@@ -31,7 +31,7 @@
   text-decoration: none;
   font-size: 20px;
   margin: 20px;
-  color: black;
+  color: white;
 }
 .nav-link li a:hover{
   cursor: pointer;
