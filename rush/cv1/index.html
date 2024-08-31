@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khin's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1b65be4627.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="Logo.png" alt="logo" />
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Experiments</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="about" class="about-section">
+      <div class="pic">
+        <img src="Khin.jpg" alt="Khin" />
+      </div>
+      <div class="aboutKhin">
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm Khin, a passionate and driven web developer currently
+          studying Computer Science. I have a keen interest in building
+          innovative web applications and exploring the latest trends in
+          technology. <br />
+          My journey in coding began with curiosity and has grown into a deep
+          love for problem-solving and creativity. <br />
+          Outside of coding, I’m always looking for opportunities to learn and
+          grow, whether through collaborating with others, participating in
+          hackathons, or staying updated with the latest tech news.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <h2>Experimental Projects</h2>
+      <p>Here are some experimental projects I’ve worked on.</p>
+      <div class="project-grid">
+        <div class="project-card">
+          <a href="https://weather-app-khin.netlify.app/" target="_blank">
+            <img
+              src="https://react-js-projects-collection.netlify.app/images/WeatherApp.jpg"
+              alt="WeatherApp"
+            />
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://resume-builder-phi-six.vercel.app/" target="_blank">
+            <img
+              src="https://react-js-projects-collection.netlify.app/images/ResumeBuilder.png"
+              alt="Resume Builder"
+            />
+          </a>
+        </div>
+        <div class="project-card">
+          <a
+            href="https://clarakhin.github.io/Random-Quote-Generator/"
+            target="_blank"
+          >
+            <img
+              src="https://pure-javascript-projects.netlify.app/images/Random%20Quote%20Generator.png"
+              alt="Quote Generator"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <ul>
+        <li>
+          <i class="fa-brands fa-square-github"></i>
+          <a href="https://github.com/ClaraKhin">Khin Thiri Kyaw</a>
+        </li>
+        <li>
+          <i class="fa-brands fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/khin-thiri-kyaw/"
+            >Khin Thiri Kyaw</a
+          >
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:clarakhin339@gmail.com">clarakhin339@gmail.com</a>
+        </li>
+      </ul>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
