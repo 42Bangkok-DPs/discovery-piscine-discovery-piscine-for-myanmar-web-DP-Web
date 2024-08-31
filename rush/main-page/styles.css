@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
 }
 
 /* Nav Bar Start */
-.nav-bar{
+.nav-bar {
   width: 100%;
   top: 0;
   position: sticky;
@@ -17,23 +17,23 @@
   background-color: #333333;
   z-index: 1;
 }
-.logo{
+.logo {
   font-size: 30px;
   color: palevioletred;
 }
-.nav-link{
+#nav-link {
   display: flex;
   align-items: center;
   list-style-type: none;
   justify-content: space-evenly;
 }
-.nav-link li a{
+#nav-link li a {
   text-decoration: none;
   font-size: 20px;
   margin: 20px;
   color: white;
 }
-.nav-link li a:hover{
+#nav-link li a:hover {
   cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 10px;
@@ -41,64 +41,63 @@
   transition: 0.5s;
 }
 
-.menu-btn{
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  width: 40px;
-  background-color: black;
-  cursor: pointer;
+.hamburger {
   display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
 }
+
 /* Nav Bar End */
 /* Portfolio Session Start */
-.portfolio-session{
+.portfolio-session {
   width: 100%;
   height: 50vh;
   margin-top: 30px;
   /* background-color: red; */
 }
-.portfolio-session h1{
+.portfolio-session h1 {
   font-size: 30px;
   text-align: center;
   color: black;
 }
-.line{
+.line {
   width: 150px;
   height: 4px;
   background: palevioletred;
   margin: 10px auto;
   border-radius: 5px;
 }
-.member{
+.member {
   margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
   height: 4 00px;
   /* align-items: center; */
 }
-.member-1 img{
+.member-1 img {
   width: 280px;
   height: 280px;
   border-radius: 30%;
   transition: 0.5s;
 }
-.member-2 img{
+.member-2 img {
   width: 280px;
   height: 280px;
   border-radius: 30%;
   transition: 0.5s;
 }
-.member-1 img:hover, .member-2 img:hover{
+.member-1 img:hover,
+.member-2 img:hover {
   transform: translateY(-10px);
   filter: brightness(1);
 }
-.member h1{
+.member h1 {
   margin-top: 20px;
   margin-bottom: 15px;
   font-size: 30px;
 }
-.member p{
+.member p {
   text-align: center;
   color: black;
   font-size: 20px;
@@ -107,20 +106,20 @@
 /* Portfolio Session End */
 
 /* Contact Session Start */
-.contact{
+.contact {
   /* background-color: rgb(48, 48, 48); */
   display: block;
   width: 100%;
   margin-top: 250px;
 }
-.contact h1{
+.contact h1 {
   text-align: center;
   font-size: 30px;
   margin-bottom: 10px;
   padding-top: 40px;
   color: black;
 }
-.contact-detail a{
+.contact-detail a {
   text-decoration: none;
   color: black;
   display: flex;
@@ -130,9 +129,71 @@
   font-size: 20px;
   transition: 0.5s;
 }
-.contact-detail a i:hover{
+.contact-detail a i:hover {
   cursor: pointer;
   filter: brightness(1);
   color: palevioletred;
 }
 /* Contact Session End */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  #nav-link {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+  }
+  #nav-link li {
+    text-align: center;
+    margin: 10px 0;
+  }
+  #nav-link.show {
+    display: flex;
+  }
+  .member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .member-1 img {
+    width: 200px;
+    height: 200px;
+  }
+  .member-2 img {
+    width: 200px;
+    height: 200px;
+  }
+  .portfolio-session h1 {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+  }
+  .member h1 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .member p {
+    color: black;
+    font-size: 15px;
+  }
+  .contact {
+    margin-top: 300px;
+  }
+  .contact h1 {
+    font-size: 25px;
+    padding-top: 40px;
+    color: black;
+  }
+  .contact-detail a {
+    padding: 15px;
+    font-size: 18px;
+  }
+}
