@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" 
+  integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Nav Bar Session Start -->
+    <nav class="nav-bar">
+      <h1 class="logo">Khaing</h1>
+      <ul class="nav-link">
+          <li><a href="/rush/index.html">Home</a></li>
+          <li><a href="#certificate">Certificate</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+      <img src="./image/menu-btn.png" alt="" class="menu-btn">
+   </nav>
+  <!-- Nav bar Session End -->
+
+  <!-- My Info Session Start -->
+  <div class="row">
+    <!-- Image Section -->
+    <div class="left-side">
+      <img src="./image/Me.jpg" alt="" class="my-image">
+    </div>
+    <!-- Info Section -->
+    <div class="right-side">
+      <p>Name: Khaing Zin Thet</p>
+      <p>Birth Date: 6.9.2001</p>
+      <p>Nickname : Khaing</p>
+      <p>Gender : Female</p>
+      <button class="btn"><a href="#contact">Contact Info</a></button>
+    </div>
+  </div>
+  <!-- My Info Section End -->
+
+  <!-- Certificate Section Start -->
+   <div class="certificate" id="certificate">
+    <p>Browse my recent</p>
+    <h1>Certificate</h1>
+    <div class="img-section">
+      <img src="./image/1.png" alt="" srcset="">
+      <img src="./image/2.png" alt="" srcset="">
+      <img src="./image/3.png" alt="" srcset="">
+    </div>
+   </div>
+  <!-- Certificate Section End  -->
+
+  <!-- Contact Section Start -->
+   <div class="contact" id="contact">
+    <h1>Contact Me</h1>
+    <div class="contact-detail">
+      <a href="https://github.com/KhaingKhaing6921">
+        <i class="fab fa-github">https://github.com/KhaingKhaing6921</i>
+      </a>
+      <a href="https://www.linkedin.com/in/khaingzinthet6921/">
+        <i class="fab fa-linkedin">https://www.linkedin.com/in/khaingzinthet6921/</i>
+      </a>
+      <a href="https://www.instagram.com/khaingzinthet_01?igsh=MTgxbGpxdTE5ODlnaw%3D%3D&utm_source=qr">
+        <i class="fab fa-instagram">khaingzinthet_01</i>
+      </a>
+      <a href="https://www.facebook.com/khaing.zinthet6921?mibextid=LQQJ4d">
+        <i class="fab fa-facebook">Khaing Zin Thet</i>
+      </a>
+    </div>
+   </div>
+  <!-- Contact Section End -->
+
+   <!-- javascript section start -->
+   <script>
+    const menuBtn = document.querySelector('.menu-btn')
+    const navlinks = document.querySelector('.nav-link')
+
+    menuBtn.addEventListener('click',()=>{
+        navlinks.classList.toggle('mobile-menu')
+    })
+</script>
+</body>
+</html>
